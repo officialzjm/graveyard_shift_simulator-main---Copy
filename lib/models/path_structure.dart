@@ -63,8 +63,8 @@ extension DoublePrecision on double {
 
 extension OffsetJson on Offset {
   Map<String, double> toJson() => {
-    'x': (dx*0.0254).toPrecision(4),
-    'y': (dy*0.0254).toPrecision(4),
+    'x': dx.toPrecision(4),
+    'y': dy.toPrecision(4),
   };
 }
 

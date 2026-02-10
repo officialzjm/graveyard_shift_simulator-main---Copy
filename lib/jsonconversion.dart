@@ -59,7 +59,7 @@ List<Segment> createSegmentList(List<Waypoint> waypoints) {
     } else {
       path = [wp.pos,nextWp.pos];
     }
-    segments.add(Segment(inverted: wp.reversed, stopEnd: false, path: path, velocity: (wp.velocity*0.0254).toPrecision(4), accel: (wp.accel*0.0254).toPrecision(4)));
+    segments.add(Segment(inverted: wp.reversed, stopEnd: false, path: path, velocity: wp.velocity.toPrecision(4), accel: wp.accel.toPrecision(4)));
   }
   return segments;
 }
@@ -87,8 +87,8 @@ List<Waypoint> importWaypoints(List<dynamic> jsonSegments) {
     final inverted = seg['inverted'] as bool;
     final constraints = seg['constraints'];
 
-    final velocity = (constraints['velocity'] as num).toDouble() / 0.0254;
-    final accel = (constraints['accel'] as num).toDouble() / 0.0254;
+    final velocity = (constraints['velocity'] as num).toDouble();
+    final accel = (constraints['accel'] as num).toDouble();
 
     final start = Offset(
       (path.first['x'] as num).toDouble(),
