@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:graveyard_shift_simulator/constants.dart';
 import 'package:graveyard_shift_simulator/models/path_structure.dart';
 
-Offset cubicPoint(
+Offset cubicPoint(//
   Offset p0,
   Offset p1,
   Offset p2,
