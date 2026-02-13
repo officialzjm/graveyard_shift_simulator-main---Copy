@@ -5,7 +5,7 @@ import 'dart:math';
 //Inches per second , we will standarize to meters later
 const double maxVelocity = 70;
 const double maxAccel = 200; // im not sure what this should be
-const double fieldHalf = 74;
+const double fieldHalf = 73.8;
 
 const wpRadius = 2.0;
 const handleRadius = 1.5;
