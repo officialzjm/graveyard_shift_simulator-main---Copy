@@ -123,7 +123,7 @@ class CommandList extends ChangeNotifier {
 }
 
 enum SegmentDragType { pos, handleIn, handleOut }
-enum CommandName {intake, longgoal, uppercentergoal, matchloader}
+enum CommandName {intake, outtake, lowGoal, longGoal, cmd1, cmd2, tDoinker, tUpperIntakeRaise, tmatchLoader, tmidDescore, tlowGoalScoring}
 
 class DragTargetInfo {
   final SegmentDragType type;
