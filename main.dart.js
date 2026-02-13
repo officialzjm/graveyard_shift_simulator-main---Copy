@@ -81627,7 +81627,7 @@ e=g.c
 if(e!=null)b3.$1(e)
 e=f.b
 if(e!=null)b3.$1(e)
-for(d=0;d<q;){d+=0.05
+for(d=0;d<q;){d+=0.02
 c=b0.I7(d)
 o.r=A.q(B.tC,B.K5,B.c.d6(c.d/70,0,1)).gp(0)
 e=b3.$1(c.a)
