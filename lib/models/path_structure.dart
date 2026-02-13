@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:vector_math/vector_math.dart';
 import 'dart:math';
 //later add start and end speed to path model class
-//also move commands into pathmodel
+//also move commands into pathmodela
 class Waypoint {
   Offset pos;
   Offset? handleIn;
