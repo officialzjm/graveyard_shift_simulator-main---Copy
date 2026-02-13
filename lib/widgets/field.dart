@@ -239,7 +239,7 @@ class _FieldPainter extends CustomPainter {
       // Velocity visualization (20 points total)
       double time = 0;
       while (time < duration) {
-        time += 0.02;
+        time += 0.05;
           final pt = pathModel.getPointAtTime(time);
           paintBezierCurve.color = velocityToColor(pt.velocity);
           canvas.drawCircle(toScreen(pt.pos), pathRadius * dynamicScale, paintBezierCurve);
